@@ -2,13 +2,13 @@
 
 目前本框架為 UI 組件提供了五種特性修飾
 
-| 特性修飾類型 | 解釋 |
-| :--- | :--- |
-| `Clickable` | 可點擊，點擊後能根據點擊事件修改屬性數值，此特性自身繼承了 `Disable` |
-| `Disable` | 可禁用，禁用後將成爲僅展示的組件 |
-| `Listenable` | 可監聽，用於接收界面使用者所屬的指定玩家事件，然後根據該事件修改屬性數值，此特性自身繼承了 `Activitable` |
-| `Activitable` | 可啓動，為可監聽特性提供了條件過濾 \(是否啓動監聽\) |
-| `Animatable` | 可執行動畫，不同於上述四項，此特性也可被展示類組件使用 |
+| 特性修飾類型        | 解釋                                                          |
+| ------------- | ----------------------------------------------------------- |
+| `Clickable`   | 可點擊，點擊後能根據點擊事件修改屬性數值，此特性自身繼承了 `Disable`                     |
+| `Disable`     | 可禁用，禁用後將成爲僅展示的組件                                            |
+| `Listenable`  | 可監聽，用於接收界面使用者所屬的指定玩家事件，然後根據該事件修改屬性數值，此特性自身繼承了 `Activitable` |
+| `Activitable` | 可啓動，為可監聽特性提供了條件過濾 (是否啓動監聽)                                  |
+| `Animatable`  | 可執行動畫，不同於上述四項，此特性也可被展示類組件使用                                 |
 
 以下將使用框架内置的組件進行範例。
 
@@ -137,7 +137,6 @@ public final class TextInputField extends AbstractComponent implements Listenabl
 }
 ```
 
-以上為文字輸入組件。在實作 Listenable 之後，你需要實作監聽啓動條件 \(`shouldActivate`\)，監聽開始時的動作 \(`onListen`\)，監聽事件類型 \(`getEventClass`\)，監聽事件的最長等待時間 \(`getMaxWaitingTime`\)，以及事件輸入處理 \(`callBack`\)。
+以上為文字輸入組件。在實作 Listenable 之後，你需要實作監聽啓動條件 (`shouldActivate`)，監聽開始時的動作 (`onListen`)，監聽事件類型 (`getEventClass`)，監聽事件的最長等待時間 (`getMaxWaitingTime`)，以及事件輸入處理 (`callBack`)。
 
 當中 shouldActiviate 繼承自 Activitable，而屬性數值修改部分則在事件輸入處理的部分。
-

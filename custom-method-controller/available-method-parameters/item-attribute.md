@@ -47,4 +47,3 @@ public class MainController {
 {% hint style="danger" %}
 參數類型必須符合數值内的類型，否則會報錯。
 {% endhint %}
-

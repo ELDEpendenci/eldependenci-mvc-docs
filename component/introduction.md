@@ -79,5 +79,3 @@ public class TestView implements View<Void> {
 
 **所有的組件工廠都會提供 `create()` 方法以創建並返回組件。**
 
-
-

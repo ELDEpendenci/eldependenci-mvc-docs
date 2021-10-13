@@ -129,4 +129,3 @@ public class MainView implements View<String> { // 此界面裝載 String 作為
 {% hint style="info" %}
 當然，記得別忘了把 `GUITemplate` 註冊為文件池！
 {% endhint %}
-

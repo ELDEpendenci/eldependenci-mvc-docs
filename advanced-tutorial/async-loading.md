@@ -110,7 +110,7 @@ public final class AsyncController {
 
 ## 設置為指定的界面互動處理的異步記載界面
 
-如果你希望設置為指定的界面互動處理\(自定義 method\)所使用的異步加載界面的話，只需要在 該界面互動處理的 method 上標註 `@AsyncLoadingView` 即可。
+如果你希望設置為指定的界面互動處理(自定義 method)所使用的異步加載界面的話，只需要在 該界面互動處理的 method 上標註 `@AsyncLoadingView` 即可。
 
 ```java
 @UIController("async")
@@ -149,4 +149,3 @@ public final class AsyncController {
     }
 }
 ```
-

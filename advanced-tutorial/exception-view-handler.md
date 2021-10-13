@@ -110,7 +110,7 @@ public class ELDTester extends ELDBukkitPlugin {
 
 ## 設置為插件內的異常處理器
 
-要設置為 Plugin Scoped \(插件內的異常處理器\), 則使用 `addExceptionViewHandlers` 方法而非全局即可。
+要設置為 Plugin Scoped (插件內的異常處理器), 則使用 `addExceptionViewHandlers` 方法而非全局即可。
 
 ```java
 @ELDPlugin(
@@ -149,4 +149,3 @@ public class MyOwnExceptionViewHandler implements ExceptionViewHandler {
     }
 }
 ```
-

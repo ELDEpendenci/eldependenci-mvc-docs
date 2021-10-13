@@ -350,7 +350,7 @@ UI Session 類似於 HttpSession，但基於 Minecraft 打開界面者必是玩�
 
 UI Session 的生命週期如下：
 
-![](.gitbook/assets/eld-mvc-uisession-lifecycle.jpg)
+![](.gitbook/assets/eld-mvc-UISession-lifecycle.jpg)
 
 UI Session 從玩家打開第一個界面，到玩家關閉最後一個界面之間一直保持單例，因此可以用來負責數據的傳遞。
 
@@ -434,4 +434,3 @@ public interface UISession {
 
 }
 ```
-

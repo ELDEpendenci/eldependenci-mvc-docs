@@ -26,5 +26,3 @@ public class MainController {
 根據之前範例的物品，以上兩個 assert 理應為 true。
 {% endhint %}
 
-
-
