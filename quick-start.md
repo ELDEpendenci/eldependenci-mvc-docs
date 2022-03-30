@@ -2,6 +2,19 @@
 
 假若你使用 Maven，則添加以下的依賴:
 
+{% hint style="info" %}
+本框架採用 [github packages](https://github.com/orgs/ELDEpendenci/packages) 作為 maven 庫。你可以在 [這裏 ](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#installing-a-package)進一步了解如何掛接。
+{% endhint %}
+
+```markup
+<repositories>
+    <repository>
+        <id>eld</id>
+        <url>https://maven.pkg.github.com/ELDependenci/eldependenci-mvc</url>
+    </repository>
+</repositories>
+```
+
 ```markup
 <dependency>
      <groupId>org.eldependenci</groupId>
@@ -344,7 +357,7 @@ public class MainController {
 
 考慮到這一點，我們受啟發於 ASP .NET / SpringBoot 等 Restful framework，創建了 `UISession` 這個容器。
 
-## UI Session 
+## UI Session&#x20;
 
 UI Session 類似於 HttpSession，但基於 Minecraft 打開界面者必是玩家，因此沒有匿名 Session 一說。
 
