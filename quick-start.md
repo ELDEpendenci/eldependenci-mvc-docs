@@ -246,6 +246,28 @@ public class MainController {
 }
 ```
 
+### 不指定界面的互動處理
+
+v0.1.4 之後，你可以不指定界面來捕捉該 Controller 內所有界面的事件傳入。
+
+```java
+@UIController("main")
+public class MainController {
+
+    public BukkitView<?, ?> index(Player player) {
+        String greeting = "hello, " + player.getName() + "!"; // 將顯示玩家的名稱
+        return new BukkitView<>(MainView.class, greeting);
+    }
+
+    // 透過指定 AnyView.class, 此方法將會捕捉任何界面。
+    @ClickMapping(pattern = 'A', view = AnyView.class)
+    public void onClickA(Player player) {
+        player.sendMessage("you clicked A item!");
+    }
+
+}
+```
+
 ### 跳頁處理
 
 首先，創建一個要被跳轉的界面。
