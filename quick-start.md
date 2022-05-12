@@ -246,7 +246,7 @@ public class MainController {
 }
 ```
 
-### 不指定界面的互動處理
+### 不指定界面的互動處理 <a href="#anyvieweventhandling" id="anyvieweventhandling"></a>
 
 v0.1.4 之後，你可以不指定界面來捕捉該 Controller 內所有界面的事件傳入。
 
