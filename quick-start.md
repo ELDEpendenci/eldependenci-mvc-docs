@@ -150,24 +150,11 @@ public final class AsyncController {
 最後，到 Main class 中，取出 `MVCInstallation` 然後註冊你的 Controller，這樣就完成了。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
         MVCInstallation mvc = serviceCollection.getInstallation(MVCInstallation.class);
         mvc.registerControllers(MainController.class); // 註冊 Controller
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 ## 使用

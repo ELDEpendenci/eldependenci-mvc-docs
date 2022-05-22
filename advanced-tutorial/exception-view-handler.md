@@ -88,24 +88,11 @@ public final class ELDGExceptionViewHandler implements ExceptionViewHandler {
 只需要調用 `MVCInstallation` 註冊即可。設置全局處理器將使所有界面插件所拋出的錯誤經由你的處理器去處理。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
         MVCInstallation mvc = serviceCollection.getInstallation(MVCInstallation.class);
         mvc.setGlobalExceptionHandler(MyOwnExceptionViewHandler.class); // 設置全局處理器
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 ## 設置為插件內的異常處理器
@@ -113,24 +100,11 @@ public class ELDTester extends ELDBukkitPlugin {
 要設置為 Plugin Scoped (插件內的異常處理器), 則使用 `addExceptionViewHandlers` 方法而非全局即可。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
         MVCInstallation mvc = serviceCollection.getInstallation(MVCInstallation.class);
         mvc.addExceptionViewHandlers(List.of(MyOwnExceptionViewHandler.class)); // 新增多個異常處理器
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 ### 設置為指定 Controller 的異常處理器

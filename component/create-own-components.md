@@ -315,25 +315,12 @@ public class PasswordField extends AbstractComponent implements Listenable<Async
 最後，獲取 `MVCInstallation` 並註冊你的組件。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
         MVCInstallation mvc = serviceCollection.getInstallation(MVCInstallation.class);
         // 註冊組件
         mvc.addComponentFactory(PasswordFieldFactory.class, PasswordFieldFactoryImpl.class);
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 然後，就可以開始使用:

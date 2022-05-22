@@ -25,15 +25,8 @@ public @interface MyOwnFilter {
 然後，到 `MVCInstallation` 那邊新增你的標註並定義其過濾方式。
 
 ```java
-@ELDPlugin(
-        registry = TesterRegistry.class,
-        lifeCycle = TesterLifeCycle.class
-)
-public class ELDTester extends ELDBukkitPlugin {
-
-
     @Override
-    protected void bindServices(ServiceCollection serviceCollection) {
+    public void bindServices(ServiceCollection serviceCollection) {
         MVCInstallation mvc = serviceCollection.getInstallation(MVCInstallation.class);
         // 註冊你的自定義過濾標註
         mvc.registerQualifier(MyOwnFilter.class, (interactEvent, pattern, myOwnFilter) -> {
@@ -42,12 +35,6 @@ public class ELDTester extends ELDBukkitPlugin {
             return clickEvent.getClick() == myOwnFilter.type(); // 檢查點擊類型是否符合
         });
     }
-
-    @Override
-    protected void manageProvider(ManagerProvider provider) {
-
-    }
-}
 ```
 
 最後，便可以到任何的 Controller 的界面互動處理方法中使用:
