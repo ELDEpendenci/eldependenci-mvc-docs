@@ -13,6 +13,7 @@
 |   `RGBSelectorFactory`  | 顔色輸入組件 | 是      | `org.bukkit.Color`  | Clickable, Listenable |
 |    `SelectionFactory`   | 選擇組件   | 是      | 任何                  | Clickable             |
 |  `TimeSelectorFactory`  | 時間輸入組件 | 是      | `LocalTime`         | Clickable, Listenable |
+|  `PasswordInputFactory` | 密碼輸入組件 | 是      | `String` (hashed)   | Clickable, Listenable |
 
 {% hint style="info" %}
 關於各個組件工廠的使用方法解釋，請自行參閲 javadoc 文件。
