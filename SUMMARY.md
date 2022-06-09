@@ -16,6 +16,7 @@
 
 * [目前可用的返回參數](custom-method-controller/available-return-types.md)
 * [目前可用的填入參數](custom-method-controller/available-method-parameters/README.md)
+  * [@FromSession 詳解](custom-method-controller/available-method-parameters/fromsession-xiang-jie.md)
   * [@FromPattern 詳解](custom-method-controller/available-method-parameters/from-pattern.md)
   * [@ItemAttribute 詳解](custom-method-controller/available-method-parameters/item-attribute.md)
   * [@ModelAttribute 與 @MapAttribute](custom-method-controller/available-method-parameters/modelattribute-and-mapattribute.md)

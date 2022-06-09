@@ -46,3 +46,6 @@ public class MainController {
     }
 ```
 
+{% hint style="info" %}
+該 slot 為 pattern 內的 slot, 而不是整個 inventory 的 slot。
+{% endhint %}
