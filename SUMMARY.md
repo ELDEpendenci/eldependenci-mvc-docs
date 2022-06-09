@@ -11,7 +11,7 @@
 * [使用文件預先渲染界面](advanced-tutorial/render-by-template.md)
 * [自定義界面互動過濾](advanced-tutorial/filter-interact-event.md)
 * [生命周期掛鉤](advanced-tutorial/lifecycle-hook.md)
-* [使用中間件攔截修改](advanced-tutorial/shi-yong-zhong-jian-jian-lan-jie-xiu-gai.md)
+* [使用中間件攔截修改](advanced-tutorial/middleware-intercept.md)
 
 ## 控制器内自定義方法的可用參數 <a href="#custom-method-controller" id="custom-method-controller"></a>
 

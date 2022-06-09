@@ -2,7 +2,7 @@
 description: 此為 v0.1.5 之後的功能
 ---
 
-# 傳到 Controller 前的攔截
+# 使用中間件攔截修改
 
 {% hint style="warning" %}
 在閱讀本章節之前，請先參閱[快速開始](../quick-start.md)。
