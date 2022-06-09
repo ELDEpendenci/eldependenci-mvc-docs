@@ -8,4 +8,6 @@
 | `BukkitView<?, ?>`                    | 跳轉到其他界面。若回傳 `BukkitRedirectView`, 則跳轉到其他控制器   | 可         | 可            | 不可        |
 | `BukkitPromise<BukkitView<?,?>>`      | 異步跳轉到其他界面。若回傳 `BukkitRedirectView`, 則跳轉到其他控制器 | 可         | 可            | 不可        |
 | `CompletableFuture<BukkitView<?, ?>>` | 異步跳轉到其他界面。若回傳 `BukkitRedirectView`, 則跳轉到其他控制器 | 可         | 可            |           |
+| `BukkitPromise<Void>`                 | 等待異步執行，但不跳轉到任何界面                              | 不可        | 可            |           |
+| `CompletableFuture<Void>`             | 等待異步執行，但不跳轉到任何界面                              | 不可        | 可            |           |
 
