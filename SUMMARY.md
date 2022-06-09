@@ -32,6 +32,7 @@
 ## 其他參考 <a href="#references" id="references"></a>
 
 * [版本更新](references/update/README.md)
+  * [v0.1.5](references/update/v0.1.5.md)
   * [v0.1.4](references/update/v0.1.4.md)
   * [v0.1.3](references/update/v0.1.3.md)
   * [v0.1.2](references/update/v0.1.2.md)
