@@ -11,7 +11,7 @@ public void onClick(@FromSession("word") @Nullable String word, Player player){
 }
 ```
 
-`@FromSession` 也可透過填入是否為 poll 而是用 `pollAttribute`
+`@FromSession` 也可透過填入是否為 poll 而使用 `pollAttribute`
 
 ```java
 @ClickMapping(view = MainView.class, pattern = 'B')
